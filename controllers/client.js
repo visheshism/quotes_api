@@ -15,7 +15,7 @@ export const getRandomQuote = async (req, res, next) => {
             randomQuote = allQuotes[randomIdx]
         }
 
-        lastAccessedId(randomQuote._id)
+        await lastAccessedId(randomQuote._id)
 
         res.status(200).json({
             success: true,
@@ -59,7 +59,7 @@ export const getQuoteByCategRandomly = async (req, res, next) => {
             randomQuote = allQuotes.reverse()[randomIdx]
         }
 
-        lastAccessedId(randomQuote._id)
+       await lastAccessedId(randomQuote._id)
 
         res.status(200).json({
             success: true,
