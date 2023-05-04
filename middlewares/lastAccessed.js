@@ -8,3 +8,9 @@ export const lastAccessed = async (req, res, next) => {
     req.lastSession = lastSessionInfo
     next()
 }
+
+export const lastAccessedId = async (used_id) => {
+    const lastSessionInfo = await lastSession.findOne({ lastId: { $exists: true }, lastAccessed: { $exists: true } })
+    lastSessionInfo.lastId = used_id;
+    await lastSessionInfo.save();
+}
