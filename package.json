@@ -1,7 +1,7 @@
 {
   "name": "quotes_api",
   "version": "1.0.0",
-  "description": "This API retrieves quotes for various  genres",
+  "description": "This API retrieves quotes for various genres",
   "main": "server.js",
   "type": "module",
   "engines": {
