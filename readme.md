@@ -1,11 +1,12 @@
 # Quotes API Documentation
 
 ## Introduction
-This API serves as the backend for TodoApp. It provides functionality to manage todo items.
+This API serves as the backend for managing inspirational quotes within TodoApp. 
+It provides endpoints for retrieving random quotes, managing categories, and creating new quotes.
 
 ## Tech Used
 - Express.js
-- JsonWebToken (JWT)
+- MongoDB
 
 ## Installation
 To install the necessary dependencies, run the following command:
